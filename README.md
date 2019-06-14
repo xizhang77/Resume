@@ -1,4 +1,4 @@
-# Xi's Resume
+# Xi Zhang's Resume
 
 ## Template
 The resume is based on Awesome Resume/CV template. For more information, please see
