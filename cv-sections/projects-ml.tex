@@ -2,7 +2,7 @@
 %	SECTION TITLE
 %----------------------------------------------------------------------------------------
 
-\cvsection{Selected Projects}
+\cvsection{Projects}
 
 %----------------------------------------------------------------------------------------
 %	SECTION CONTENT
@@ -13,57 +13,64 @@
 %------------------------------------------------
 
 \projentry
-{Embedding Representation Algorithm for Streaming Data} % Name
+{Embedding Algorithm for Streaming Data} % Name
 {Python} % Skills
 { 
 \begin{cvitems}
-\item{Proposed a one-pass, limited memory streaming classical Multidimensional Scaling ({MDS}) algorithm with higher approximation accuracy. It can be used as a dimension reduction tool to sequentially represent high dimensional data such as text and images, with a speedup of 13X.}
+\item{Proposed a one-pass, low memory usage Multidimensional Scaling ({MDS}) algorithm for streaming data, to overcome the issues of low efficiency in existing embedding algorithms.}
+\item{Achieved higher approximation accuracy and a speedup of up to 13X comparing with existing algorithms.}
+\item{Implemented the algorithm as a dimension reduction tool in Python, to sequentially process high dimensional image/text data. }
+%Demonstrated good results on both image dataset (MNIST, CIFAR10) and text datasets (Twitter, 20NG, etc.) }
 \end{cvitems}
 }
 
 %------------------------------------------------
 
 \projentry
-{Representation Framework for Document Clustering and Labeling} % Name
-{Python, Javascript} % Skills
+{Unsupervised Learning for Document Clustering and Labeling} % Name
+{Python, JavaScript} % Skills
 { 
 \begin{cvitems}
-\item{Developed an embedding representation framework for document clustering. Proposed two metrics to semantically allocate unlabeled documents into the corresponding appropriate cluster. Productized as an internal tool for data representation in Brookhaven National Lab KBase project.}
+% \item{Developed an unsupervised embedding framework for document clustering. Proposed two metrics to semantically allocate unlabeled documents into the corresponding appropriate cluster.}
+\item{Proposed an efficient labeling algorithm for document classification, based on semantic analysis and  feature space understanding, which is further integrated into a cluster-then-label unsupervised learning flow. }
+\item{Developed a visualization framework to represent datasets with clusters and labels. Productized as an internal tool in Brookhaven National Lab KBase project.}
 \end{cvitems}
 }
 
 %------------------------------------------------
 
 \projentry
-{Time Series Anomaly Detection for Unusual Status in Data Center} % Name
-{C++} % Skills
+% {Time Series Anomaly Detection for Unusual Status in Data Center} % Name
+{Anomaly Detection for Time Series Data}
+{Python, SQL} % Skills
 { % Description(s) of experience/contributions/knowledge
 \begin{cvitems}
-\item{Detect time series anomalies in the performance of streaming measurements among sensors. Propose approaches for the diagnosis of the anomaly status (e.g. overheating). The method was adopted for RACF Data Center in Brookhaven National Lab.}
+% \item{Detect time series anomalies in the performance of streaming measurements among sensors. Propose approaches for diagnosis of the anomaly status (e.g. overheating).}
+\item{Implemented Long Short-Term Memory (\textbf{LSTM}) prediction model on multivariate time series data for anomaly detection. Utilized a Gaussian Distribution based method for anomaly measurement.}
+\item{Analyzed real-world ambient sensor data (50GB+ SQL Database collected by RACF Data Center in Brookhaven National Lab), achieved at least 91\% accuracy.}
 \end{cvitems}
 }
 
 %------------------------------------------------
 
-\projentry
-{Sequence Modeling for Weather Prediction} % Name
-{Python} % Skills
-{ % Description(s) of experience/contributions/knowledge
-\begin{cvitems}
-\item{Implemented Recursive Neural Network ({RNN}) using TensorFlow for weather forecasting, which applied among multivariate time series data collected by sensors, such as temperature, air pressure, humanity etc.}
-\end{cvitems}
-}
+% \projentry
+% {Sequence Modeling for Weather Prediction} % Name
+% {Python} % Skills
+%{ % Description(s) of experience/contributions/knowledge
+%\begin{cvitems}
+%\item{Implemented Recursive Neural Network (\textbf{RNN}) using TensorFlow for weather forecasting, which applied among multivariate time series data collected by sensors, such as temperature, air pressure, humanity etc.}
+%\end{cvitems}
+%}
 
 %------------------------------------------------
-
-\projentry
-{Image Detection for Human Upper Bodies} % Name
-{Python} % Skills
-{
-\begin{cvitems}
-\item{Implemented a Support Vector Machine ({SVM}) classifier to detect images with human upper bodies. The classifier is used to distinguish upper-body patches from non-upper-body patches and Histogram of Oriented Gradient (HOG) algorithm is used for feature selection.}
-\end{cvitems}
-}
+%\projentry
+%{Image Classification} % Name
+%{Python} % Skills
+%{
+%\begin{cvitems}
+%\item{Implemented a multi-class Support Vector Machine (\textbf{SVM}) model to classify images for human upper bodies. Histogram of Oriented Gradient (HOG) algorithm is used for feature selection and resulting a 91\% accuracy.}
+%\end{cvitems}
+%}
 
 %------------------------------------------------
 
@@ -80,21 +87,26 @@
 
 \projentry
 {Predictive Model for Biological Data Analysis} % Name
-{C++} % Skills
+{C++, SQL} % Skills
 { % Description(s) of experience/contributions/knowledge
 \begin{cvitems}
-\item{Developed a LASSO regression solver to predict the experimental results based on the periodical evidence. It was integrated into a bioinformatics system in School of Medicine of Stony Brook University.}
+% \item{Developed a LASSO regression solver to predict the experimental results based on the periodical evidence.}
+\item{Implemented predictive models for the sanity checking of biological experiment data from Stony Brook Hospital.}
+\item{Processed large volume database in MySQL. Applied data manipulation, feature selection and regularization methods for high dimensional data.}
+\item{Developed a module in C++ for automated data processing and analysis, which was integrated into the bio-informatics system in the hospital.}
 \end{cvitems}
 }
 
 %------------------------------------------------
 
 \projentry
-{Novel Load-Balancer Developed for Heterogeneous Clusters} % Name
+{Novel Load-Balancer for Heterogeneous Computing Clusters} % Name
 {C, PHP, Httperf, Apache} % Skills
 { % Description(s) of experience/contributions/knowledge
 \begin{cvitems}
-\item{Proposed a scalable Load Balancers for large heterogeneous cluster systems, which provided low response times without incurring significant overhead. Validation experiments performed on both Apache based clusters and Amazon EC2 web service.}
+\item{Proposed a scalable Load Balancer for large scale distributed system consisting of servers with different speed/configuration, to achieve low response time without incurring any significant overhead.}
+%\item{The load balancing algorithm is aware to servers computing power, and also adaptive to changes in load.}
+\item{Deployed the proposed method on Apache based clusters and Amazon EC2 web service, achieved up to 36\% speedup comparing with existing load balancer work.}
 \end{cvitems}
 }
 
